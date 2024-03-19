@@ -5,7 +5,7 @@ import Textbox from "../components/Textbox";
 import Button from "../components/Button";
 import { useSelector } from "react-redux";
 
-export const Login = () => {
+const Login = () => {
 
     const {
         register,
@@ -20,6 +20,7 @@ export const Login = () => {
     const user = "";
 
     const navigate = useNavigate();
+    console.log(user);
     useEffect(() => {
         user && navigate("/dashboard");
     }, [user]);
@@ -91,3 +92,5 @@ export const Login = () => {
         </div>
     )
 }
+
+export default Login;

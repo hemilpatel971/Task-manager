@@ -1,11 +1,15 @@
-import { Dashboard } from "./pages/Dashboard";
-import { Task } from "./pages/Task";
-import { Login } from "./pages/Login";
-import { Routes, Route, Navigate, Outlet, useLocation } from 'react-router-dom';
-import { Users } from "./pages/Users";
+import { Navigate, Outlet, Route, Routes, useLocation } from "react-router-dom";
 import { Toaster } from "sonner";
-import { Trash } from "./pages/Trash";
-import { TaskDetails } from "./pages/TaskDetails";
+import  Navbar  from "./components/Navbar";
+import  Sidebar  from "./components/Sidebar";
+
+import Login from "./pages/Login";
+import  TaskDetails  from "./pages/TaskDetails";
+import  Task  from "./pages/Task";
+import  Trash  from "./pages/Trash";
+import  Users  from "./pages/Users";
+import  Dashboard  from "./pages/Dashboard";
+
 
 function Layout() {
   const user = ""
