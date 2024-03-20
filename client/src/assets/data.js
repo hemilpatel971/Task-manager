@@ -802,21 +802,21 @@ export const summary = {
           type: "started",
           activity: "Project completed!!",
           date: "2024-02-08T18:13:14.717Z",
-          by: { _id: "65c202d4aa62f32ffd1303cc", name: "Codewave" },
+          by: { _id: "65c202d4aa62f32ffd1303cc", name: "Hemil" },
           _id: "65c51b998064dfd208b3f9",
         },
         {
           type: "commented",
           activity: "Project completed!!",
           date: "2024-02-08T18:13:14.717Z",
-          by: { _id: "65c202d4aa62f32ffd1303cc", name: "Codewave" },
+          by: { _id: "65c202d4aa62f32ffd1303cc", name: "Hemil" },
           _id: "65c51b98064df97d208b3f9",
         },
         {
           type: "completed",
           activity: "Project completed!!",
           date: "2024-02-08T18:13:14.717Z",
-          by: { _id: "65c202d4aa62f32ffd1303cc", name: "Codewave" },
+          by: { _id: "65c202d4aa62f32ffd1303cc", name: "Hemil" },
           _id: "65c51b998064df97d208b3f9",
         },
       ],
@@ -1102,7 +1102,7 @@ export const summary = {
   
   export const user = {
     _id: "662f32ffd1303cc",
-    name: "Codewave",
+    name: "Hemil",
     title: "Administrator",
     role: "Admin",
     email: "admin@mts.com",

@@ -6,24 +6,23 @@ import Button from "../components/Button";
 import { useSelector } from "react-redux";
 
 const Login = () => {
-
+    const { user } = useSelector((state) => state.auth);
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
 
+    const navigate = useNavigate();
+
     const submitHandler = async (data) => {
         console.log("submit");
     };
 
-    const user = "";
-
-    const navigate = useNavigate();
-    console.log(user);
     useEffect(() => {
         user && navigate("/dashboard");
     }, [user]);
+
     return (
         <div className='w-full min-h-screen flex items-center justify-center flex-col lg:flex-row bg-[#f3f4f6]'>
             <div className='w-full md:w-auto flex gap-0 md:gap-40 flex-col md:flex-row items-center justify-center'>
@@ -49,7 +48,7 @@ const Login = () => {
                             <p className='text-neutral-900 text-3xl font-bold text-center'>
                                 Welcome back!
                             </p>
-                            
+
                         </div>
 
                         <div className='flex flex-col gap-y-5'>

@@ -2,7 +2,7 @@ import { Navigate, Outlet, Route, Routes, useLocation } from "react-router-dom";
 import { Toaster } from "sonner";
 import  Navbar  from "./components/Navbar";
 import  Sidebar  from "./components/Sidebar";
-
+import { useSelector } from "react-redux";
 import Login from "./pages/Login";
 import  TaskDetails  from "./pages/TaskDetails";
 import  Task  from "./pages/Task";
@@ -12,7 +12,7 @@ import  Dashboard  from "./pages/Dashboard";
 
 
 function Layout() {
-  const user = ""
+  const { user } = useSelector((state) => state.auth);
   const location = useLocation()
 
   return user ? (
