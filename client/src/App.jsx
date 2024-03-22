@@ -1,15 +1,20 @@
+
+import { Transition } from "@headlessui/react";
+import clsx from "clsx";
+import { Fragment, useRef } from "react";
+import { IoClose } from "react-icons/io5";
 import { Navigate, Outlet, Route, Routes, useLocation } from "react-router-dom";
 import { Toaster } from "sonner";
 import  Navbar  from "./components/Navbar";
 import  Sidebar  from "./components/Sidebar";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Login from "./pages/Login";
 import  TaskDetails  from "./pages/TaskDetails";
 import  Task  from "./pages/Task";
 import  Trash  from "./pages/Trash";
 import  Users  from "./pages/Users";
 import  Dashboard  from "./pages/Dashboard";
-
+import { setOpenSidebar } from "./redux/slices/authSlice";
 
 function Layout() {
   const { user } = useSelector((state) => state.auth);
